@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Aggregator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="app-nav">
+        <a href="#investments">Investments</a>
+        <a href="#videos">Videos</a>
+        <a href="#social">Social Media</a>
+        <a href="#news">News</a>
+        <a href="#productivity">Productivity</a>
+        <a href="#crypto">Crypto/DeFi</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌞</button>
+    </nav>
+
+    <!-- Landing Page 1: Investments -->
+    <section id="investments" class="landing-page">
+        <h2>Investments</h2>
+        <div class="grid">
+            <div class="card" data-source="moomoo" tabindex="0">
+                <h3>Moomoo</h3>
+                <p>Stock trading platform</p>
+            </div>
+            <div class="card" data-source="webull" tabindex="0">
+                <h3>Webull</h3>
+                <p>Market analytics</p>
+            </div>
+            <div class="card card-featured" data-source="opensea" tabindex="0">
+                <h3>OpenSea</h3>
+                <p>NFT marketplace</p>
+            </div>
+            <div class="card" data-source="magiceden" tabindex="0">
+                <h3>MagicEden</h3>
+                <p>Solana NFTs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing Page 2: Videos -->
+    <section id="videos" class="landing-page">
+        <h2>Videos</h2>
+        <div class="grid">
+            <div class="card card-featured" data-source="youtube" tabindex="0">
+                <h3>YouTube</h3>
+                <p>Latest videos</p>
+            </div>
+            <div class="card" data-source="vimeo" tabindex="0">
+                <h3>Vimeo</h3>
+                <p>Creative content</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing Page 3: Social Media -->
+    <section id="social" class="landing-page">
+        <h2>Social Media</h2>
+        <div class="grid">
+            <div class="card" data-source="x" data-username="visionbynoble" tabindex="0">
+                <h3>X (Twitter)</h3>
+                <p>Latest posts</p>
+            </div>
+            <div class="card" data-source="instagram" data-username="visionbynoble" tabindex="0">
+                <h3>Instagram</h3>
+                <p>Photo feed</p>
+                <div class="elfsight-app-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"></div>
+            </div>
+            <div class="fb-page"
+      data-href="https://www.facebook.com/facebook"
+      data-tabs="timeline"
+      data-width="340"
+      data-height="500"
+      data-small-header="false"
+      data-adapt-container-width="true"
+      data-hide-cover="false"
+      data-show-facepile="true">
+  <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+    <a href="https://www.facebook.com/facebook">Facebook</a>
+  </blockquote>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="card" data-source="tiktok" tabindex="0">
+                <h3>TikTok</h3>
+                <p>Trending videos</p>
+            </div>
+            <div class="card" data-source="linkedin" tabindex="0">
+                <h3>LinkedIn</h3>
+                <p>Professional news</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing Page 4: News -->
+    <section id="news" class="landing-page">
+        <h2>News & Blogs</h2>
+        <div class="grid">
+            <div class="card" data-source="rss" tabindex="0">
+                <h3>RSS Feeds</h3>
+                <p>Latest headlines</p>
+            </div>
+            <div class="card" data-source="medium" tabindex="0">
+                <h3>Medium</h3>
+                <p>Popular articles</p>
+            </div>
+            <div class="card" data-source="substack" tabindex="0">
+                <h3>Substack</h3>
+                <p>Newsletter updates</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing Page 5: Productivity -->
+    <section id="productivity" class="landing-page">
+        <h2>Productivity</h2>
+        <div class="grid">
+            <div class="card" data-source="calendar" tabindex="0">
+                <h3>Google Calendar</h3>
+                <p>Upcoming events</p>
+            </div>
+            <div class="card" data-source="notion" tabindex="0">
+                <h3>Notion</h3>
+                <p>Notes & docs</p>
+            </div>
+            <div class="card" data-source="trello" tabindex="0">
+                <h3>Trello</h3>
+                <p>Project boards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing Page 6: Crypto/DeFi -->
+    <section id="crypto" class="landing-page">
+        <h2>Crypto / DeFi</h2>
+        <div class="grid">
+            <div class="card" data-source="metamask" tabindex="0">
+                <h3>MetaMask</h3>
+                <p>Wallet overview</p>
+            </div>
+            <div class="card" data-source="uniswap" tabindex="0">
+                <h3>Uniswap</h3>
+                <p>Swap & liquidity</p>
+            </div>
+            <div class="card" data-source="etherscan" tabindex="0">
+                <h3>Etherscan</h3>
+                <p>On-chain activity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for displaying tweets -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+    <div id="tweet-modal" class="modal" style="display:none"></div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="app.js"></script>
+</body>
+</html>
